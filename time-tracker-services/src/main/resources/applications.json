@@ -1,0 +1,21 @@
+{
+  "descriptors": [
+    {
+      "name": "TimeSheet",
+      "imagePath": "war:/../images/timesheet.png",
+      "override": false,
+      "enabled": true,
+      "application": {
+        "title": "Time Sheet",
+        "description": "Time Sheet",
+        "url": "./time_sheet",
+        "active": true,
+        "mandatory": true,
+        "mobile": true,
+        "permissions": [
+          "*:/spaces/exo_employees"
+        ]
+      }
+    }
+  ]
+}
