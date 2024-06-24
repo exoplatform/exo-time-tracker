@@ -2,6 +2,7 @@
   <exo-drawer
     ref="addFeatureDrawer"
     right
+    attached
     class="">
     <template slot="title">
       {{ $t("exo.timeTracker.features.text.add") }}

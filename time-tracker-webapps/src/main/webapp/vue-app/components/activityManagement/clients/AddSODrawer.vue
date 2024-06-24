@@ -2,6 +2,7 @@
   <exo-drawer
     ref="addSODrawer"
     right
+    attached
     class="">
     <template slot="title">
       {{ $t("exo.timeTracker.clients.addSODrawer.drawerTitel") }}

@@ -2,6 +2,7 @@
   <exo-drawer
     ref="addActivityDrawer"
     right
+    attached
     class="">
     <template slot="title">
       {{ $t("exo.timeTracker.activities.text.add") }}

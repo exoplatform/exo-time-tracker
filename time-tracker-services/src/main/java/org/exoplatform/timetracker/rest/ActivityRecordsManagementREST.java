@@ -216,7 +216,12 @@ public class ActivityRecordsManagementREST implements ResourceContainer {
       if (StringUtils.isEmpty(userName)){
         userName=sourceIdentity.getRemoteId();
       }
-      return Response.ok(activityRecordService.getLastActivityRecord(userName)).build();
+      ActivityRecord result = activityRecordService.getLastActivityRecord(userName);
+      if (result != null) {
+        return Response.ok(result).build();
+      } else {
+        return Response.ok("{}").build();
+      }
     } catch (Exception e) {
       LOG.error("Unknown error occurred while getting ActivityRecords", e);
       return Response.serverError().build();

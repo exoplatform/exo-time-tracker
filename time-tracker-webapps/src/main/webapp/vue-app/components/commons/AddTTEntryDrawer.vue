@@ -1,5 +1,5 @@
 <template>
-  <exo-drawer ref="addTTEntryDrawer" right>
+  <exo-drawer ref="addTTEntryDrawer" right attached>
     <template slot="title">
       {{ $t('exo.timeTracker.timeTracking.text.add.entry') }}
     </template>

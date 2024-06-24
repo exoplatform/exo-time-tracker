@@ -2,6 +2,7 @@
   <exo-drawer
     ref="filterDrawer"
     right
+    attached
     class="timeSheetFilterDrawer">
     <template slot="title">
       {{ $t('exo.timeTracker.timeSheet.filterDrawer.toolbarTitle') }}

@@ -2,6 +2,7 @@
   <exo-drawer
     ref="editActivityCodeDrawer"
     right
+    attached
     class="">
     <template slot="title">
       {{ $t("exo.timeTracker.codes.editActivityCodeDrawer.toolbarTitle") }}

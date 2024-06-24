@@ -1,5 +1,5 @@
 <template>
-  <exo-drawer ref="editDrawer" right>
+  <exo-drawer ref="editDrawer" right attached>
     <template slot="title">
       {{ $t("exo.timeTracker.commons.editTTEntryDrawer.toolbarTitle") }}
     </template>
