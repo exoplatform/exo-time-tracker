@@ -2,6 +2,7 @@
   <exo-drawer
     ref="editClientDrawer"
     right
+    attached
     class="">
     <template slot="title">
       {{ $t("exo.timeTracker.clients.editClientDrawer.drawerTitel") }}
@@ -75,8 +76,8 @@
             </div>
           </div>
         </v-form>
-        <add-so-drawer ref="addSODrawer" @save="addSo" />
       </div>
+      <add-so-drawer ref="addSODrawer" @save="addSo" />
     </template>
     <template slot="footer">
       <div class="d-flex">

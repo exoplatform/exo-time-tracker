@@ -2,6 +2,7 @@
   <exo-drawer
     ref="addTeamDrawer"
     right
+    attached
     class="">
     <template slot="title">
       {{ $t("exo.timeTracker.teams.text.add.team") }}

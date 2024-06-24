@@ -2,6 +2,7 @@
   <exo-drawer
     ref="editOfficeDrawer"
     right
+    attached
     class="">
     <template slot="title">
       {{ $t("exo.timeTracker.timeTrackingSettings.editOfficeDrawer.toolbarTitle") }}

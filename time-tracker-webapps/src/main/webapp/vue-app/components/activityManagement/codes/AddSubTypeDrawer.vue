@@ -2,6 +2,7 @@
   <exo-drawer
     ref="addSubTypeDrawer"
     right
+    attached
     class="">
     <template slot="title">
       {{ $t("exo.timeTracker.codes.text.add.SubType") }}

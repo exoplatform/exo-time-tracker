@@ -2,6 +2,7 @@
   <exo-drawer
     ref="editSubTypeDrawer"
     right
+    attached
     class="">
     <template slot="title">
       {{ $t("exo.timeTracker.codes.editSubTypeDrawer.toolbarTitle") }}

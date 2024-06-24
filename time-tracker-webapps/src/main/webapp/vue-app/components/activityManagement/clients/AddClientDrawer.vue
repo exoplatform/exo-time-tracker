@@ -2,6 +2,7 @@
   <exo-drawer
     ref="addClientDrawer"
     right
+    attached
     class="">
     <template slot="title">
       {{ $t("exo.timeTracker.clients.text.add") }}

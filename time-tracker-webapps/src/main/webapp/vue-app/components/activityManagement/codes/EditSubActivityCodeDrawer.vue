@@ -2,6 +2,7 @@
   <exo-drawer
     ref="editSubActivityCodeDrawer"
     right
+    attached
     class="">
     <template slot="title">
       {{ $t("exo.timeTracker.codes.editSubActivityCodeDrawer.toolbarTitle") }}
@@ -20,7 +21,7 @@
               name="code"
               class="input-block-level ignore-vuetify-classes my-3">
           </div>
-          <v-row>
+          <div>
             <v-label for="label">
               {{ $t("exo.timeTracker.activityManagement.drawerLabelTextLabel") }}
             </v-label>
@@ -30,7 +31,7 @@
               type="text"
               name="label"
               class="input-block-level ignore-vuetify-classes my-3">
-          </v-row>
+          </div>
         </v-form>
       </div>
     </template>

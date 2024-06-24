@@ -3,6 +3,7 @@
     <exo-drawer
       ref="timeTrackerDrawer"
       right
+      attached
       class="logTimeDrawer">
       <template slot="title">
         {{ $t("exo.timeTracker.timeTracking.timeTrackingDrawer.toolbarTitle") }}

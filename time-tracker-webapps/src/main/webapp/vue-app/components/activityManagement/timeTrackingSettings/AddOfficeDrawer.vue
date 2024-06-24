@@ -2,6 +2,7 @@
   <exo-drawer
     ref="addOfficeDrawer"
     right
+    attached
     class="">
     <template slot="title">
       {{ $t("exo.timeTracker.timeTrackingSettings.text.add.office") }}
