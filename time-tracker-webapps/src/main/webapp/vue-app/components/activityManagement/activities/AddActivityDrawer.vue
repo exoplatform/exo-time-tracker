@@ -2,13 +2,12 @@
   <exo-drawer
     ref="addActivityDrawer"
     right
-    attached
     class="">
     <template slot="title">
       {{ $t("exo.timeTracker.activities.text.add") }}
     </template>
     <template slot="content">
-      <div>
+      <div class="ma-3">
         <v-form ref="form" v-model="valid">
           <div>
             <v-label for="type">

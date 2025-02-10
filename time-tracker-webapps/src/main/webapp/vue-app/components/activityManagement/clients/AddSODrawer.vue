@@ -2,13 +2,12 @@
   <exo-drawer
     ref="addSODrawer"
     right
-    attached
     class="">
     <template slot="title">
       {{ $t("exo.timeTracker.clients.addSODrawer.drawerTitel") }}
     </template>
     <template slot="content">
-      <div>
+      <div class="ma-3">
         <v-form ref="form" v-model="valid">
           <div>
             <v-label for="name">

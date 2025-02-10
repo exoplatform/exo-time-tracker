@@ -26,14 +26,6 @@
     </portal-skin>
 
     <portlet>
-        <name>activityManagement</name>
-        <module>
-            <depends>
-                <module>activityManagementjs</module>
-            </depends>
-        </module>
-    </portlet>
-    <portlet>
         <name>TimeTrackingPortlet</name>
         <module>
             <depends>

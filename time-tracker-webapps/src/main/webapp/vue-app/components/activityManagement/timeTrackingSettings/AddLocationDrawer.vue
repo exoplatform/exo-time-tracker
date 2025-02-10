@@ -2,7 +2,6 @@
   <exo-drawer
     ref="addLocationDrawer"
     right
-    attached
     class="">
     <template slot="title">
       {{ $t("exo.timeTracker.timeTrackingSettings.text.add.location") }}

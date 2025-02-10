@@ -2,13 +2,12 @@
   <exo-drawer
     ref="addOfficeDrawer"
     right
-    attached
     class="">
     <template slot="title">
       {{ $t("exo.timeTracker.timeTrackingSettings.text.add.office") }}
     </template>
     <template slot="content">
-      <div>
+      <div class="ma-3">
         <v-form ref="form" v-model="valid">
           <div>
             <v-label for="code">
