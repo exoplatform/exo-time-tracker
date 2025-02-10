@@ -3,7 +3,6 @@
     <exo-drawer
       ref="timeTrackerDrawer"
       right
-      attached
       class="logTimeDrawer">
       <template slot="title">
         {{ $t("exo.timeTracker.timeTracking.timeTrackingDrawer.toolbarTitle") }}
@@ -44,15 +43,15 @@
               @input="activityRecordMenuDatePicker = false" />
           </v-menu>
         </div>
-        <div 
-          align="center" 
+        <div
+          align="center"
           justify="center">
           <h4 :class="itemRowBackground">
             {{ $t("exo.timeTracker.timeTracking.timeTrackingDrawer.text.totlal") }}
             {{ total }}
           </h4>
         </div>
-        
+
         <div align="center" justify="center">
           <v-list v-if="activityRecords.length > 0" class="actList">
             <v-list-item
@@ -60,7 +59,7 @@
               :key="i"
               class="actItem pr-n6">
               <v-tooltip
-                bottom 
+                bottom
                 max-width="200px">
                 <template v-slot:activator="{ on, attrs }">
                   <v-list-item-content
@@ -73,7 +72,7 @@
                       v-text="item.activity.label" />
                     <span class=" TimeTrackingDrawerSpan d-inline-block text-truncate text-left mb-n2">
                       <v-list-item-subtitle v-text="item.description" />
-                    </span>                   
+                    </span>
                   </v-list-item-content>
                 </template>
                 <span class="TimeTrackingDrawerSpan text-left text-justify text-break">{{ item.description }}</span>
@@ -85,7 +84,7 @@
                     class="d-flex align-self-start"
                     close-on-click
                     close-on-content-click
-                    bottom 
+                    bottom
                     attach
                     nudge-bottom="29"
                     left>
@@ -101,14 +100,14 @@
                       </v-btn>
                     </template>
                     <v-list class="text-left TTbackgroundList mt-n2" ref="TTlistRef">
-                      <v-list-item 
+                      <v-list-item
                         @click="editActivityRecord(item)">
                         <v-list-item-title class="subtitle-2">
                           <i class="uiIcon uiIconEdit"></i>
                           {{ $t("exo.timeTracker.teams.teamsList.edit") }}
                         </v-list-item-title>
                       </v-list-item>
-                      <v-list-item 
+                      <v-list-item
                         @click="deleteActivityRecord(item.id)">
                         <v-list-item-title class="subtitle-2">
                           <i class="uiIcon uiIconTrash"></i>
@@ -132,7 +131,7 @@
           </v-list>
         </div>
         <div>
-          <v-btn 
+          <v-btn
             class="TTDrawerButtonAdd"
             block
             large
