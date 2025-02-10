@@ -2,7 +2,6 @@
   <exo-drawer
     ref="addWorkTimeDrawer"
     right
-    attached
     class="">
     <template slot="title">
       {{ $t("exo.timeTracker.timeTrackingSettings.text.add.worckTime") }}
@@ -10,7 +9,7 @@
     <template slot="content">
       <div>
         <v-form ref="form" v-model="valid">
-          <div>
+          <div class="ma-3">
             <v-menu
               ref="menu"
               v-model="menu"

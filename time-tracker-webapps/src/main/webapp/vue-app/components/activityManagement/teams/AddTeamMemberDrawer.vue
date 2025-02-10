@@ -2,13 +2,12 @@
   <exo-drawer
     ref="addTeamMemberDrawer"
     right
-    attached
     class="">
     <template slot="title">
       {{ $t("exo.timeTracker.teams.text.add.member") }}
     </template>
     <template slot="content">
-      <div>
+      <div class="ma-3">
         <v-form ref="form" v-model="valid">
           <div>
             <v-label for="role">
