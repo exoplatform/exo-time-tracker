@@ -424,6 +424,7 @@ export default {
       this.formatDate(this.date);
     },
     addActivityRecord() {
+      console.log('Add Activity Record');
       this.$refs.addTTEntryDrawer.openAddTTEntryDrawer();
     },
     editActivityRecord(item) {

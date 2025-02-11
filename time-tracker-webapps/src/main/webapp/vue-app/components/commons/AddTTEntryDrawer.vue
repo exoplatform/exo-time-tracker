@@ -1,10 +1,10 @@
 <template>
-  <exo-drawer ref="addTTEntryDrawer" right attached>
+  <exo-drawer ref="addTTEntryDrawer" right>
     <template slot="title">
       {{ $t('exo.timeTracker.timeTracking.text.add.entry') }}
     </template>
     <template slot="content">
-      <div>
+      <div class="ma-3">
         <v-form ref="form">
           <div
             v-if="showDPicker"

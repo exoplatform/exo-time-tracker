@@ -7,7 +7,7 @@
       {{ $t("exo.timeTracker.timeTrackingSettings.text.add.location") }}
     </template>
     <template slot="content">
-      <div>
+      <div class="ma-3">
         <v-form ref="form" v-model="valid">
           <div>
             <v-label for="code">
