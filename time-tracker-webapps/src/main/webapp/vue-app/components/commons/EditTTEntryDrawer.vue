@@ -1,10 +1,10 @@
 <template>
-  <exo-drawer ref="editDrawer" right attached>
+  <exo-drawer ref="editDrawer" right>
     <template slot="title">
       {{ $t("exo.timeTracker.commons.editTTEntryDrawer.toolbarTitle") }}
     </template>
     <template slot="content">
-      <div>
+      <div class="ma-3">
         <v-form ref="form">
           <div>
             <v-label for="description">

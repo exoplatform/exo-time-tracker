@@ -2,7 +2,6 @@
   <exo-drawer
     ref="filterDrawer"
     right
-    attached
     class="timeSheetFilterDrawer">
     <template slot="title">
       {{ $t('exo.timeTracker.timeSheet.filterDrawer.toolbarTitle') }}
@@ -95,7 +94,7 @@
       </v-menu>
     </template>
     <template slot="content">
-      <div>
+      <div class="ma-3">
         <form ref="form1">
           <div
             v-if="employees.length > 0"
