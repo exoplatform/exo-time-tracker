@@ -117,7 +117,9 @@
               </option>
             </select>
           </div>
-          <div>
+          <div 
+            id="timeTrackerDivAutoCompleteTeamsListItems"
+            class="position-relative contactAutoComplete">
             <v-label for="teams">
               {{ $t("exo.timeTracker.activities.editActivitiesDrawer.drawerLabelTeams") }}
             </v-label>
@@ -126,11 +128,13 @@
               v-model="teamIds"
               :items="teams"
               outlined
+              class="ma-0 pa-0"
+              menu-props="{ closeOnClick: true}"
+              attach="#timeTrackerDivAutoCompleteTeamsListItems"
               dense
               chips
               small-chips
               multiple
-              menu-props="closeOnClick"
               item-text="name"
               item-value="id"
               @click.stop />
